@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background: #16111f;
+}
+
+.title {
+    color: #fff;
+    font-family: "Poppins";
+    margin-top: 20px;
+}
+.subtitle {
+    color: lightgray;
+    font-weight: 300;
+    font-size: 120%;
+    font-family: "Poppins";
+}
+
+.hcenter {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+
+.modules {
+    height: 80%;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 10%;
+    display: flex;
+}
+
+.module {
+    background: #000;
+    height: 15%;
+    width: 33%;
+    border-radius: 12px;
+    color: white;
+    font-family: "poppins";
+    font-size: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: 0;
+    outline: 0;
+}
+
+button:hover {
+    transform: scale(105%);
+}
+
+
+.module_contents {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: white;
+    font-family: "poppins";
+}
+
+.module_contents button {
+    color: white;
+    font-family: "poppins";
+    width: 10%;
+    background: #000;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.module_contents input[type="file"] {
+    visibility: hidden;
+}
+.module_contents input[type="range"] {
+    width: 30%;
+}
