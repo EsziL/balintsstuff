@@ -6,3 +6,8 @@ document.querySelectorAll("button").forEach(btn => {
         window.location.href = btn.getAttribute("href"); 
     });
 });
+
+document.querySelector(".backarrow img").addEventListener("click", e => {
+    e.preventDefault();
+    window.location.href = "/"; 
+});
