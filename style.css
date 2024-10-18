@@ -68,7 +68,7 @@ body {
     border-radius: 12px;
     color: white;
     font-family: "poppins";
-    font-size: 75%;
+    font-size: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +76,7 @@ body {
     transition: transform 0.2s ease-in-out;
     border: 0;
     outline: 0;
+    font-weight: 400;
 }
 
 button:hover {
@@ -114,4 +115,35 @@ button:hover {
 }
 .module_contents input[type="range"] {
     width: 30%;
+}
+
+
+/* phones */
+@media (max-width: 767px) {
+    .title {
+        font-size: 150%;
+    }
+    .subtitle {
+        font-size: 80%;
+    }
+    .backarrow img {
+        width: 30px;
+        height: 30px;
+    }
+    .backarrow {
+        width: 30px;
+        height: 30px;
+        top: 5px;
+        left: 5px;
+    }
+    .module_contents input[type="range"] {
+        width: 90%;
+    }
+    .module_contents button {
+        width: 30%;
+        font-size: 75%;
+    }
+    .module {
+        font-size: 75%;
+    }
 }

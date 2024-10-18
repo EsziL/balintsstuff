@@ -7,7 +7,10 @@ document.querySelectorAll("button").forEach(btn => {
     });
 });
 
-document.querySelector(".backarrow img").addEventListener("click", e => {
-    e.preventDefault();
-    window.location.href = "/"; 
-});
+const backarrowImg = document.querySelector(".backarrow img");
+if (backarrowImg !== null) {
+    backarrowImg.addEventListener("click", e => {
+        e.preventDefault();
+        window.location.href = "../index.html";
+    });
+}
